@@ -38,8 +38,9 @@ article div {
 }
 
 /* Paragraphs */
-p {
+p, ul {
   line-height: 1.5;
+  text-align: left;
 }
 
 /* Links */
@@ -68,11 +69,50 @@ img {
 }
 
 /* Footer */
-footer {
+footer p {
   text-align: center;
 }
 
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-group h1{
+  font-size: 2.5em;
+}
+
+#about-image-intro{  
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-group{
+  display: flex;
+  flex-direction: row;
+}
+
+div.portfolio-group section{
+  padding: 0 0 0 2px;
+}
+
+.portfolio-group p{
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-list li{
+  width: 30%;
 }
